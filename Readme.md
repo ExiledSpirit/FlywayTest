@@ -1,6 +1,6 @@
 # Spring Boot Flyway Test
 
-## Requirements
+## Dependencies
 
 ```bash
 <dependencies>
@@ -30,21 +30,27 @@
 	</dependencies>
 ```
 
-## Steps to setup
+## setup
 
-**1. Clone the application**
+**1. Clone**
 
 ```bash
-git clone https://github.com/callicoder/spring-boot-flyway-example.git
+git clone https://github.com/ExiledSpirit/FlywayTest.git
 ```
 
 **2. Create PostgreSql database**
 ```bash
-create database flyway_demo
+create database artigoManager
 ```
 
-**3. Change mysql username and password as per your installation**
+**3. Change postgreSql database configs at src/main/resources/application.properties**
 
-+ open `src/main/resources/application.properties`
+```bash
+spring.datasource.url=<database_url example: jdbc:postgresql://localhost:3306/artigoManager>
+spring.datasource.username=<username>
+spring.datasource.password=<password>
 
-+ change `spring.datasource.username` and `spring.datasource.password` as per your mysql installation
+spring.flyway.schemas=<schema_name>
+spring.flyway.username=<username>
+spring.flyway.password=<password>
+```
