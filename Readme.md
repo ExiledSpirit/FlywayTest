@@ -46,7 +46,7 @@ create database artigoManager
 **3. Change postgreSql database configs at src/main/resources/application.properties**
 
 ```bash
-spring.datasource.url=<database_url "example: jdbc:postgresql://localhost:3306/artigoManager">
+spring.datasource.url=<database_url> "example: jdbc:postgresql://localhost:3306/artigoManager"
 spring.datasource.username=<username>
 spring.datasource.password=<password>
 
